@@ -1,7 +1,7 @@
 /**
 * DAT - Elearning Hub
 *
-* @author Webestica (https://www.webestica.com/)
+* @author DAT - Elearning Hub (https://www.diracetechnology.com/)
 * @version 1.4.2
 **/
 
