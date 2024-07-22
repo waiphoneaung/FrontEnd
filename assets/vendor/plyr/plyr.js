@@ -6513,7 +6513,7 @@ typeof navigator === "object" && (function (global, factory) {
             // 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg', tracks:
             // [ { kind: 'captions', label: 'English', srclang: 'en', src:
             // 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt',
-            // default: true, }, { kind: 'captions', label: 'French', srclang: 'fr', src:
+            // default: true, }, { kind: 'captions', label: 'Japan', srclang: 'fr', src:
             // 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt', }, ],
             // };
 
