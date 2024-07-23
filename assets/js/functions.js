@@ -1,7 +1,7 @@
 /**
-* DAT - Elearning Hub
+* Eduport- LMS, Education and Course Theme
 *
-* @author DAT - Elearning Hub (https://www.diracetechnology.com/)
+* @author Webestica (https://www.webestica.com/)
 * @version 1.4.2
 **/
 

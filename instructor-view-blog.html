@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from diracetechnology.com/admin-course-category.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jul 2024 03:24:23 GMT -->
+<!-- Mirrored from diracetechnology.com/admin-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jul 2024 03:23:01 GMT -->
 <head>
 	<title>DAT - Elearning Hub</title>
 
@@ -82,7 +82,7 @@
 	<!-- Plugins CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/choices/css/choices.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/apexcharts/css/apexcharts.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/overlay-scrollbar/css/overlayscrollbars.min.css">
 
 	<!-- Theme CSS -->
@@ -121,13 +121,13 @@
 
 				<!-- menu item 2 -->
 				<li class="nav-item">
-					<a class="nav-link" data-bs-toggle="collapse" href="#collapsepage" role="button" aria-expanded="true" aria-controls="collapsepage">
+					<a class="nav-link" data-bs-toggle="collapse" href="#collapsepage" role="button" aria-expanded="false" aria-controls="collapsepage">
 						<i class="bi bi-basket fa-fw me-2"></i>Courses
 					</a>
 					<!-- Submenu -->
-					<ul class="nav collapse flex-column show" id="collapsepage" data-bs-parent="#navbar-sidebar">
+					<ul class="nav collapse flex-column" id="collapsepage" data-bs-parent="#navbar-sidebar">
 						<li class="nav-item"> <a class="nav-link" href="admin-course-list.html">All Courses</a></li>
-						<li class="nav-item"> <a class="nav-link active" href="admin-course-category.html">Course Category</a></li>
+						<li class="nav-item"> <a class="nav-link" href="admin-course-category.html">Course Category</a></li>
 						
 					</ul>
 				</li>
@@ -137,11 +137,12 @@
 
 				<!-- Menu item 4 -->
 				<li class="nav-item"><a class="nav-link" href="admin-instructor-list.html"><i class="fas fa-user-tie fa-fw me-2"></i>Instructors</a></li>
+				
 				<!-- Menu item 5 -->
 				
 
 				<!-- Menu item 6 -->
-				<li class="nav-item"> <a class="nav-link" href="admin-create-blog.html"><i class="fas fa-blog fa-fw me-2"></i>News</a></li>
+				<li class="nav-item"><a class="nav-link active" href="admin-create-blog.html"><i class="fas fa-blog fa-fw me-2"></i>Blogs</a></li>
 
 				<!-- Menu item 7 -->
 				<li class="nav-item"> <a class="nav-link" href="admin-setting.html"><i class="fas fa-user-cog fa-fw me-2"></i>Admin Settings</a></li>
@@ -170,7 +171,7 @@
 				<li class="nav-item"> <a class="nav-link" href="docs/changelog.html"><i class="fas fa-sitemap fa-fw me-2"></i>Changelog</a></li>
 			</ul>
 			<!-- Sidebar menu end -->
-			
+
 			<!-- Sidebar footer START -->
 			<div class="px-3 mt-auto pt-3">
 				<div class="d-flex align-items-center justify-content-between text-primary-hover">
@@ -186,6 +187,7 @@
 				</div>
 			</div>
 			<!-- Sidebar footer END -->
+			
 		</div>
 	</div>
 </nav>
@@ -193,7 +195,7 @@
 
 <!-- Page content START -->
 <div class="page-content">
-	
+
 	<!-- Top bar START -->
 	<nav class="navbar top-bar navbar-light border-bottom py-0 py-xl-3">
 		<div class="container-fluid p-0">
@@ -409,472 +411,237 @@
 	</nav>
 	<!-- Top bar END -->
 
-	<!-- Page main content START -->
-	<div class="page-content-wrapper border">
-
-		<!-- Title -->
-		<div class="row mb-3">
-			<div class="col-12 d-sm-flex justify-content-between align-items-center">
-				<h1 class="h3 mb-2 mb-sm-0">Web design <span class="badge bg-orange bg-opacity-10 text-orange">245</span></h1>
-				<a href="instructor-create-course.html" class="btn btn-sm btn-primary mb-0">Create a Course</a>
-			</div>
-		</div>
-
-		<!-- Card START -->
-		<div class="card bg-transparent border">
-
-			<!-- Card header START -->
-			<div class="card-header bg-light border-bottom">
-				<!-- Search and select START -->
-				<div class="row g-3 align-items-center justify-content-between">
-
-					<!-- Search bar -->
-					<div class="col-md-8">
-						<form class="rounded position-relative">
-							<input class="form-control bg-body" type="search" placeholder="Search" aria-label="Search">
-							<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-								<i class="fas fa-search fs-6 "></i>
-							</button>
-						</form>
+	
+<!-- =======================
+Page content START -->
+<section class="position-relative pt-0 pt-lg-5">
+<div class="container">
+    
+        
+    
+		<div class="row g-4">
+            
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card bg-transparent">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/02.jpg" class="card-img" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						
 					</div>
 
-					<!-- Select option -->
-					<div class="col-md-3">
-						<!-- Short by filter -->
-						<form>
-							<select class="form-select js-choice border-0 z-index-9" aria-label=".form-select-sm">
-								<option value="">Sort by</option>
-								<option>Newest</option>
-								<option>Oldest</option>
-								<option>Accepted</option>
-								<option>Rejected</option>
-							</select>
-						</form>
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="blog-detail.html">Student Loan Survey: Many Owe $50K-plus</a></h5>
+						<p class="text-truncate-2">Affronting imprudence do he he everything. Offered chiefly farther of my no colonel shyness. Such on help ye some door if in. Laughter proposal laughing any son law consider. Needed except up piqued an.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Frances Guerrero</a></h6>
+							<span class="small">30M Ago</span>
+						</div>
 					</div>
 				</div>
-				<!-- Search and select END -->
 			</div>
-			<!-- Card header END -->
+			<!-- Card item END -->
 
-			<!-- Card body START -->
-			<div class="card-body">
-				<!-- Course table START -->
-				<div class="table-responsive border-0 rounded-3">
-					<!-- Table START -->
-					<table class="table table-dark-gray align-middle p-4 mb-0 table-hover">
-						<!-- Table head -->
-						<thead>
-							<tr>
-								<th scope="col" class="border-0 rounded-start">Course Name</th>
-								<th scope="col" class="border-0">Instructor</th>
-								<th scope="col" class="border-0">Rating</th>
-								<th scope="col" class="border-0">Enrolled</th>
-								<th scope="col" class="border-0 rounded-end">Action</th>
-							</tr>
-						</thead>
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card bg-transparent">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/08.jpg" class="card-img" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						
+					</div>
 
-						<!-- Table body START -->
-						<tbody>
-							
-							<!-- Table row -->
-							<tr>
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center position-relative">
-										<!-- Image -->
-										<div class="w-60px">
-											<img src="assets/images/courses/4by3/08.jpg" class="rounded" alt="">
-										</div>
-										<!-- Title -->
-										<h6 class="table-responsive-title mb-0 ms-2">	
-											<a href="#" class="stretched-link">Building Scalable APIs with GraphQL</a>
-										</h6>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center">
-										<!-- Avatar -->
-										<div class="avatar avatar-xs flex-shrink-0">
-											<img class="avatar-img rounded-circle" src="assets/images/avatar/09.jpg" alt="avatar">
-										</div>
-										<!-- Info -->
-										<div class="ms-2">
-											<h6 class="mb-0 fw-light">Lori Stevens</h6>
-										</div>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<ul class="list-inline mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i></li>
-									</ul>
-								</td>
-
-								<!-- Table data -->
-								<td> 15,567</td>
-
-								<!-- Table data -->
-								<td>
-									<a href="#" class="btn btn-sm btn-success me-1 mb-1 mb-md-0">Edit</a>
-									<button class="btn btn-sm btn-danger mb-0">Delete</button>
-									<a href="admin-course-detail.html" class="btn btn-sm btn-warning me-1 mb-1 mb-md-0">Details</a>
-								</td>
-							</tr>
-
-							<!-- Table row -->
-							<tr>
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center position-relative">
-										<!-- Image -->
-										<div class="w-60px">
-											<img src="assets/images/courses/4by3/10.jpg" class="rounded" alt="">
-										</div>
-										<!-- Title -->
-										<h6 class="table-responsive-title mb-0 ms-2">	
-											<a href="#" class="stretched-link">Bootstrap 5 From Scratch</a>
-										</h6>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center">
-										<!-- Avatar -->
-										<div class="avatar avatar-xs flex-shrink-0">
-											<img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="avatar">
-										</div>
-										<!-- Info -->
-										<div class="ms-2">
-											<h6 class="mb-0 fw-light">Billy Vasquez</h6>
-										</div>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<ul class="list-inline mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i></li>
-									</ul>
-								</td>
-
-								<!-- Table data -->
-								<td>16,584</td>
-
-								<!-- Table data -->
-								<td>
-									<a href="#" class="btn btn-sm btn-success me-1 mb-1 mb-md-0">Edit</a>
-									<button class="btn btn-sm btn-danger mb-0">Delete</button>
-									<a href="admin-course-detail.html" class="btn btn-sm btn-warning me-1 mb-1 mb-md-0">Details</a>
-								</td>
-							</tr>
-
-							<!-- Table row -->
-							<tr>
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center position-relative">
-										<!-- Image -->
-										<div class="w-60px">
-											<img src="assets/images/courses/4by3/02.jpg" class="rounded" alt="">
-										</div>
-										<!-- Title -->
-										<h6 class="table-responsive-title mb-0 ms-2">	
-											<a href="#" class="stretched-link">Graphic Design Masterclass</a>
-										</h6>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center">
-										<!-- Avatar -->
-										<div class="avatar avatar-xs flex-shrink-0">
-											<img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="avatar">
-										</div>
-										<!-- Info -->
-										<div class="ms-2">
-											<h6 class="mb-0 fw-light">Carolyn Ortiz</h6>
-										</div>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<ul class="list-inline mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i></li>
-									</ul>
-								</td>
-
-								<!-- Table data -->
-								<td>6,458</td>
-
-								<!-- Table data -->
-								<td>
-									<a href="#" class="btn btn-sm btn-success me-1 mb-1 mb-md-0">Edit</a>
-									<button class="btn btn-sm btn-danger mb-1 me-1 mb-md-0">Delete</button>
-									<a href="admin-course-detail.html" class="btn btn-sm btn-warning me-1 mb-1 mb-md-0">Details</a>
-								</td>
-							</tr>
-
-							<!-- Table row -->
-							<tr>
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center position-relative">
-										<!-- Image -->
-										<div class="w-60px">
-											<img src="assets/images/courses/4by3/04.jpg" class="rounded" alt="">
-										</div>
-										<!-- Title -->
-										<h6 class="table-responsive-title mb-0 ms-2">	
-											<a href="#" class="stretched-link">Learn Invision</a>
-										</h6>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center">
-										<!-- Avatar -->
-										<div class="avatar avatar-xs flex-shrink-0">
-											<img class="avatar-img rounded-circle" src="assets/images/avatar/06.jpg" alt="avatar">
-										</div>
-										<!-- Info -->
-										<div class="ms-2">
-											<h6 class="mb-0 fw-light">Frances Guerrero</h6>
-										</div>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<ul class="list-inline mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-									</ul>
-								</td>
-
-								<!-- Table data -->
-								<td>20,158</td>
-
-								<!-- Table data -->
-								<td>
-									<a href="#" class="btn btn-sm btn-success me-1 mb-1 mb-md-0">Edit</a>
-									<button class="btn btn-sm btn-danger mb-0">Delete</button>
-									<a href="admin-course-detail.html" class="btn btn-sm btn-warning me-1 mb-1 mb-md-0">Details</a>
-								</td>
-							</tr>
-
-							<!-- Table row -->
-							<tr>
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center position-relative">
-										<!-- Image -->
-										<div class="w-60px">
-											<img src="assets/images/courses/4by3/09.jpg" class="rounded" alt="">
-										</div>
-										<!-- Title -->
-										<h6 class="table-responsive-title mb-0 ms-2">	
-											<a href="#" class="stretched-link">JavaScript: Full Understanding</a>
-										</h6>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center">
-										<!-- Avatar -->
-										<div class="avatar avatar-xs flex-shrink-0">
-											<img class="avatar-img rounded-circle" src="assets/images/avatar/08.jpg" alt="avatar">
-										</div>
-										<!-- Info -->
-										<div class="ms-2">
-											<h6 class="mb-0 fw-light">Samuel Bishop</h6>
-										</div>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<ul class="list-inline mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
-									</ul>
-								</td>
-
-								<!-- Table data -->
-								<td>5,325</td>
-
-								<!-- Table data -->
-								<td>
-									<a href="#" class="btn btn-sm btn-success me-1 mb-1 mb-md-0">Edit</a>
-									<button class="btn btn-sm btn-danger mb-0">Delete</button>
-									<a href="admin-course-detail.html" class="btn btn-sm btn-warning me-1 mb-1 mb-md-0">Details</a>
-								</td>
-							</tr>
-
-							<!-- Table row -->
-							<tr>
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center position-relative">
-										<!-- Image -->
-										<div class="w-60px">
-											<img src="assets/images/courses/4by3/11.jpg" class="rounded" alt="">
-										</div>
-										<!-- Title -->
-										<h6 class="table-responsive-title mb-0 ms-2">	
-											<a href="#" class="stretched-link">Build Responsive Websites with HTML</a>
-										</h6>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center">
-										<!-- Avatar -->
-										<div class="avatar avatar-xs flex-shrink-0">
-											<img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt="avatar">
-										</div>
-										<!-- Info -->
-										<div class="ms-2">
-											<h6 class="mb-0 fw-light">Dennis Barrett</h6>
-										</div>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<ul class="list-inline mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i></li>
-									</ul>
-								</td>
-
-								<!-- Table data -->
-								<td>8,258</td>
-
-								<!-- Table data -->
-								<td>
-									<a href="#" class="btn btn-sm btn-success me-1 mb-1 mb-md-0">Edit</a>
-									<button class="btn btn-sm btn-danger mb-0">Delete</button>
-									<a href="admin-course-detail.html" class="btn btn-sm btn-warning me-1 mb-1 mb-md-0">Details</a>
-								</td>
-							</tr>
-
-							<!-- Table row -->
-							<tr>
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center position-relative">
-										<!-- Image -->
-										<div class="w-60px">
-											<img src="assets/images/courses/4by3/12.jpg" class="rounded" alt="">
-										</div>
-										<!-- Title -->
-										<h6 class="table-responsive-title mb-0 ms-2">	
-											<a href="#" class="stretched-link">Build Websites with CSS</a>
-										</h6>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<div class="d-flex align-items-center">
-										<!-- Avatar -->
-										<div class="avatar avatar-xs flex-shrink-0">
-											<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar">
-										</div>
-										<!-- Info -->
-										<div class="ms-2">
-											<h6 class="mb-0 fw-light">Joan Wallace</h6>
-										</div>
-									</div>
-								</td>
-
-								<!-- Table data -->
-								<td>
-									<ul class="list-inline mb-0">
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-										<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
-									</ul>
-								</td>
-
-								<!-- Table data -->
-								<td>17,654</td>
-
-								<!-- Table data -->
-								<td>
-									<a href="#" class="btn btn-sm btn-success me-1 mb-1 mb-md-0">Edit</a>
-									<button class="btn btn-sm btn-danger mb-0">Delete</button>
-									<a href="admin-course-detail.html" class="btn btn-sm btn-warning me-1 mb-1 mb-md-0">Details</a>
-								</td>
-							</tr>
-
-						</tbody>
-						<!-- Table body END -->
-					</table>
-					<!-- Table END -->
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="blog-detail.html">How to make a college list</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list down to colleges that best fit their needs, experts say. Yet remarkably appearance get him his projection.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Louis Crawford</a></h6>
+							<span class="small">12H Ago</span>
+						</div>
+					</div>
 				</div>
-				<!-- Course table END -->
 			</div>
-			<!-- Card body END -->
+			<!-- Card item END -->
 
-			<!-- Card footer START -->
-			<div class="card-footer bg-transparent pt-0">
-				<!-- Pagination START -->
-				<div class="d-sm-flex justify-content-sm-between align-items-sm-center">
-					<!-- Content -->
-					<p class="mb-0 text-center text-sm-start">Showing 1 to 8 of 20 entries</p>
-					<!-- Pagination -->
-					<nav class="d-flex justify-content-center mb-0" aria-label="navigation">
-						<ul class="pagination pagination-sm pagination-primary-soft d-inline-block d-md-flex rounded mb-0">
-							<li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i></a></li>
-							<li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-							<li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
-							<li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
-							<li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-						</ul>
-					</nav>
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card bg-transparent">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/09.jpg" class="card-img" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Never underestimate the influence of DAT </a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Joan Wallace</a></h6>
+							<span class="small">5D Ago</span>
+						</div>
+					</div>
 				</div>
-				<!-- Pagination END -->
 			</div>
-			<!-- Card footer END -->
-		</div>
-		<!-- Card END -->
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card bg-transparent">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/03.jpg" class="card-img-top" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Covid-19 and the college experienced</a></h5>
+						<p class="text-truncate-2">Rooms oh fully taken by worse do. Points afraid but may end law. Points afraid but may end law.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Amanda Reed</a></h6>
+							<span class="small">July 21, 2021</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card bg-transparent">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/07.jpg" class="card-img-top" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Best Pinterest Boards for learning about business</a></h5>
+						<p class="text-truncate-2">Fully taken by worse do. Points afraid but may end law. Points afraid but may end law.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Samuel Bishop</a></h6>
+							<span class="small">40D ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card bg-transparent">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/04.jpg" class="card-img-top" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">The Olympics are over, now what?</a></h5>
+						<p class="text-truncate-2">Rooms oh fully taken by worse do. Points afraid but may end law. Points afraid but may end law.</p>
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Carolyn Ortiz</a></h6>
+							<span class="small">Aug 31, 2021</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+			
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card bg-transparent">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/05.jpg" class="card-imgp" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Campus Support for First-Year Students</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list</p>
+
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Lori Stevens</a></h6>
+							<span class="small">3M Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+			<!-- Card item START -->
+			<div class="col-sm-6 col-lg-4 col-xl-3">
+				<div class="card bg-transparent">
+					<div class="overflow-hidden rounded-3">
+						<img src="assets/images/event/06.jpg" class="card-imgp" alt="course image">
+						<!-- Overlay -->
+						<div class="bg-overlay bg-dark opacity-4"></div>
+						
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body">
+						<!-- Title -->
+						<h5 class="card-title"><a href="#">Bad habits that people in the industry need to quit</a></h5>
+						<p class="text-truncate-2">Prospective students should start broadly and then narrow their list</p>
+
+						<!-- Info -->
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-0"><a href="#">Louis Crawford</a></h6>
+							<span class="small">10D Ago</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card item END -->
+
+		</div> <!-- Row end -->
+
+		<!-- Pagination START -->
+		<nav class="d-flex justify-content-center mt-5" aria-label="navigation">
+			<ul class="pagination pagination-primary-soft rounded mb-0">
+				<li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-double-left"></i></a></li>
+				<li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
+				<li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+				<li class="page-item mb-0"><a class="page-link" href="#">..</a></li>
+				<li class="page-item mb-0"><a class="page-link" href="#">6</a></li>
+				<li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+			</ul>
+		</nav>
+		<!-- Pagination END -->
+
 	</div>
-	<!-- Page main content END -->
-</div>
-<!-- Page content END -->
+</section>
+<!-- =======================
+Page content END -->
 
 </main>
 <!-- **************** MAIN CONTENT END **************** -->
@@ -886,13 +653,15 @@
 <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Vendors -->
-<script src="assets/vendor/choices/js/choices.min.js"></script>
+<script src="assets/vendor/purecounterjs/dist/purecounter_vanilla.js"></script>
+<script src="assets/vendor/apexcharts/js/apexcharts.min.js"></script>
 <script src="assets/vendor/overlay-scrollbar/js/overlayscrollbars.min.js"></script>
 
 <!-- Template Functions -->
 <script src="assets/js/functions.js"></script>
 
+
 </body>
 
-<!-- Mirrored from diracetechnology.com/admin-course-category.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jul 2024 03:24:23 GMT -->
+<!-- Mirrored from diracetechnology.com/admin-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jul 2024 03:23:06 GMT -->
 </html>
