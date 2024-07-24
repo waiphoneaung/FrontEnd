@@ -956,7 +956,7 @@ url("fonts/bootstrap-icons0107.woff?dd67030699838ea613ee6dbda90effa6") format("w
 .bi-music-note::before { content: "\f4a0"; }
 .bi-music-player-fill::before { content: "\f4a1"; }
 .bi-music-player::before { content: "\f4a2"; }
-.bi-newspaper::before { content: "\f4a3"; }
+.bi-Blogspaper::before { content: "\f4a3"; }
 .bi-node-minus-fill::before { content: "\f4a4"; }
 .bi-node-minus::before { content: "\f4a5"; }
 .bi-node-plus-fill::before { content: "\f4a6"; }

@@ -2814,7 +2814,7 @@
 
         var slideInfo = extend({}, data);
 
-        var newSlide = slide.create();
+        var Blogslide = slide.create();
         var totalSlides = this.elements.length - 1;
         slideInfo.index = index;
         slideInfo.node = false;
@@ -2826,10 +2826,10 @@
 
         if (this.slidesContainer) {
           if (index > totalSlides) {
-            this.slidesContainer.appendChild(newSlide);
+            this.slidesContainer.appendChild(Blogslide);
           } else {
             var existingSlide = this.slidesContainer.querySelectorAll('.gslide')[index];
-            this.slidesContainer.insertBefore(newSlide, existingSlide);
+            this.slidesContainer.insertBefore(Blogslide, existingSlide);
           }
 
           if (this.settings.preload && this.index == 0 && index == 0 || this.index - 1 == index || this.index + 1 == index) {
