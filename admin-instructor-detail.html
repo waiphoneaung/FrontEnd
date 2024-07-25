@@ -138,12 +138,16 @@
 
 				<!-- Menu item 4 -->
 				<li class="nav-item"><a class="nav-link active" href="admin-instructor-list.html"><i class="fas fa-user-tie fa-fw me-2"></i>Instructors</a></li>
+
+				<li class="nav-item"><a class="nav-link" href="admin-instructor-request.html"><i class="fas fa-paper-plane fa-fw me-2"></i>Course Requests</a></li>
 				
 				<!-- Menu item 5 -->
 
 
 				<!-- Menu item 6 -->
 				<li class="nav-item"> <a class="nav-link" href="admin-create-blog.html"><i class="fas fa-blog fa-fw me-2"></i>Blogs</a></li>
+
+				<li class="nav-item"><a class="nav-link" href="forum.html"><i class="fas fa-comments fa-fw me-2"></i>Forum</a></li>
 
 				<!-- Menu item 7 -->
 				<li class="nav-item"> <a class="nav-link" href="admin-setting.html"><i class="fas fa-user-cog fa-fw me-2"></i>Admin Settings</a></li>
@@ -425,7 +429,7 @@
 		<div class="row g-4">
 
 			<!-- Personal information START -->
-			<div class="col-xxl-7">
+			<div class="col-xxl-12">
 				<div class="card bg-transparent border rounded-3 h-100">
 
 					<!-- Card header -->
@@ -446,19 +450,16 @@
 							<!-- Information item -->
 							<div class="col-md-6">
 								<ul class="list-group list-group-borderless">
-									<li class="list-group-item">
-										<span>Title:</span>
-										<span class="h6 mb-0">Mr.</span>
-									</li>
+									
 
 									<li class="list-group-item">
-										<span>Full Name:</span>
+										<span>Name:</span>
 										<span class="h6 mb-0">Louis Ferguson</span>
 									</li>
 
 									<li class="list-group-item">
-										<span>User Name:</span>
-										<span class="h6 mb-0">Lousifer</span>
+										<span>Staff ID:</span>
+										<span class="h6 mb-0">25-0000000</span>
 									</li>
 
 									<li class="list-group-item">
@@ -472,12 +473,12 @@
 							<div class="col-md-6">
 								<ul class="list-group list-group-borderless">
 									<li class="list-group-item">
-										<span>Email ID:</span>
+										<span>Email:</span>
 										<span class="h6 mb-0"> dathr@diracetechnology.com</span>
 									</li>
 
 									<li class="list-group-item">
-										<span>Location:</span>
+										<span>Address:</span>
 										<span class="h6 mb-0">California</span>
 									</li>
 
@@ -489,12 +490,20 @@
 							</div>
 
 							<!-- Information item -->
-							<div class="col-12">
+							<div class="col-md-6">
 								<ul class="list-group list-group-borderless">
-									<li class="list-group-item">
-										<span>Education:</span>
-										<span class="h6 mb-0">Bachelor in Computer Graphics,</span>
-										<span class="h6 mb-0">Masters in Computer Graphics</span>
+									<li class="list-group-item d-flex">
+										<span>Division:</span>
+										<span class="h6 mb-0">OffShore</span>
+									</li>
+								</ul>
+							</div>
+							<!-- Information item -->
+							<div class="col-md-6">
+								<ul class="list-group list-group-borderless">
+									<li class="list-group-item d-flex">
+										<span>Department:</span>
+										<span class="h6 mb-0">OffShore</span>
 									</li>
 								</ul>
 							</div>
@@ -517,53 +526,7 @@
 			<!-- Personal information END -->
 
 			<!-- Student status chart START -->
-			<div class="col-xxl-5">
-				<div class="row g-4">
-
-					<!-- Active student START -->
-					<div class="col-md-6 col-xxl-12">
-						<div class="card bg-transparent border overflow-hidden">
-							<!-- Card header -->
-							<div class="card-header bg-light border-bottom">
-								<h5 class="card-header-title mb-0">Active Students</h5>
-							</div>
-							<!-- Card body -->
-							<div class="card-body p-0">
-								<div class="d-sm-flex justify-content-between p-4">
-									<h4 class="text-blue mb-0">984</h4>
-									<p class="mb-0"><span class="text-success me-1">0.20%<i class="bi bi-arrow-up"></i></span>vs last Week</p>
-								</div>
-								<!-- Apex chart -->
-								<div id="activeChartstudent"></div>
-							</div>
-						</div>
-					</div>
-					<!-- Active student END -->
-
-					<!-- Enrolled START -->
-					<div class="col-md-6 col-xxl-12">
-						<div class="card bg-transparent border overflow-hidden">
-							<!-- Card header -->
-							<div class="card-header bg-light border-bottom">
-								<h5 class="card-header-title mb-0">New Enrollment</h5>
-							</div>
-							<!-- Card body -->
-							<div class="card-body p-0">
-								<div class="d-sm-flex justify-content-between p-4">
-									<h4 class="text-blue mb-0">140</h4>
-									<p class="mb-0"><span class="text-success me-1">0.35%<i class="bi bi-arrow-up"></i></span>vs last Week</p>
-								</div>
-								<!-- Apex chart -->
-								<div id="activeChartstudent2"></div>
-							</div>
-						</div>
-					</div>
-					<!-- Enrolled END -->
-
-				</div>
-			</div>
-			<!-- Student status chart END -->
-		
+			
 			<!-- Instructor course list START -->
 			<div class="col-12">
 				<div class="card bg-transparent border h-100">
