@@ -87,6 +87,15 @@
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<!-- model bootstrap link -->
+
+	<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<!-- end modal link -->
+
 </head>
 
 <body>
@@ -209,7 +218,7 @@ Main Banner START -->
 <section class="pt-0">
 	<!-- Main banner background image -->
 	<div class="container-fluid px-0">
-		
+		<!-- Add content if needed -->
 	</div>
 	<div class="container mt-n4">
 		<div class="row">
@@ -219,7 +228,7 @@ Main Banner START -->
 					<div class="row d-flex justify-content-center">
 						<!-- Avatar -->
 						<div class="col-auto mt-4 mt-md-0">
-							
+							<!-- Add content if needed -->
 						</div>
 						<!-- Profile info -->
 						<div class="col d-md-flex justify-content-center align-items-center mt-4">
@@ -227,27 +236,103 @@ Main Banner START -->
 								<h1>Forum</h1>
 							</div>
 							<div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end mt-2 mt-md-0">
-								<a href="create-post.html" class="btn btn-success mb-0">Create a post</a>
-							</div>
-						</div>
+								<!-- <a href="create-post.html" class="btn btn-success mb-0">Create a post</a> -->
+								<!-- Button trigger modal -->
+							
+										<!-- Button trigger modal -->
+										<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+										data-bs-target="#staticBackdrop">
+										Upload Employee Data File
+									</button>
+		
+									<!-- Modal -->
+									<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+										data-bs-keyboard="false" tabindex="-1"
+										aria-labelledby="staticBackdropLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h1 class="modal-title fs-5" id="staticBackdropLabel">Upload Excel File</h1>
+													<button type="button" class="btn-close" data-bs-dismiss="modal"
+														aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<h5>Please import excel file only</h5>
+													<input type="file">
+													
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary"
+														data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Submit</button>
+												</div>
+											</div>
+										</div>
+									</div>
 					</div>
 				</div>
-				<!-- Profile banner END -->
 
-				<!-- Advanced filter responsive toggler START -->
-				<!-- Divider -->
-				<hr class="d-xl-none">
-				<div class="col-12 col-xl-3 d-flex justify-content-between align-items-center">
-					<a class="h6 mb-0 fw-bold d-xl-none" href="#">Menu</a>
-					<button class="btn btn-primary d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
-						<i class="fas fa-sliders-h"></i>
-					</button>
-				</div>
-				<!-- Advanced filter responsive toggler END -->
+				<div class="card bg-transparent">
+
+					<!-- Card header START -->
+					<div class="card-header bg-transparent border-bottom px-0">
+						<!-- Search and select START -->
+						<div class="row g-3 align-items-center justify-content-between">
+
+							<!-- Search bar -->
+							<div class="col-md-8">
+								<form class="rounded position-relative">
+									<input class="form-control bg-transparent" type="search"
+										placeholder="Search" aria-label="Search">
+									<button
+										class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset"
+										type="submit">
+										<i class="fas fa-search fs-6 "></i>
+									</button>
+								</form>
+							</div>
+
+							<!-- Tab button -->
+							<div class="col-md-3">
+								<!-- Tabs START -->
+								<ul
+									class="list-inline mb-0 nav nav-pills nav-pill-dark-soft border-0 justify-content-end"
+									id="pills-tab" role="tablist">
+									<!-- Grid tab -->
+									<li class="nav-item">
+										<a href="#nav-preview-tab-1" class="nav-link mb-0 me-2 active"
+											data-bs-toggle="tab">
+											<i class="fas fa-fw fa-th-large"></i>
+										</a>
+									</li>
+									<!-- List tab -->
+									<li class="nav-item">
+										<a href="#nav-html-tab-1" class="nav-link mb-0" data-bs-toggle="tab">
+											<i class="fas fa-fw fa-list-ul"></i>
+										</a>
+									</li>
+								</ul>
+								<!-- Tabs end -->
+							</div>
+						</div>
+						<!-- Search and select END -->
+					</div>
+					<!-- Card header END -->
+
+			<!-- Advanced filter responsive toggler START -->
+			<!-- Divider -->
+			<hr class="d-xl-none">
+			<div class="col-12 col-xl-3 d-flex justify-content-between align-items-center">
+				<a class="h6 mb-0 fw-bold d-xl-none" href="#">Menu</a>
+				<button class="btn btn-primary d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+					<i class="fas fa-sliders-h"></i>
+				</button>
 			</div>
+			<!-- Advanced filter responsive toggler END -->
 		</div>
 	</div>
 </section>
+
 <!-- =======================
 Main Banner END -->
 
@@ -492,6 +577,8 @@ Footer END -->
 
 <!-- Template Functions -->
 <script src="assets/js/functions.js"></script>
+</html>
+
 
 </body>
 
