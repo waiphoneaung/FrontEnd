@@ -3,98 +3,98 @@
 
 <!-- Mirrored from diracetechnology.com/instructor-review.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jul 2024 03:23:00 GMT -->
 <head>
-	<title>DAT - Elearning Hub</title>
+    <title>DAT - Elearning Hub</title>
 
-	<!-- Meta Tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="diracetechnology.com">
-	<meta name="description" content="DAT - Elearning Hub">
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="diracetechnology.com">
+    <meta name="description" content="DAT - Elearning Hub">
 
-	<!-- Dark mode -->
-	<script>
-		const storedTheme = localStorage.getItem('theme')
- 
-		const getPreferredTheme = () => {
-			if (storedTheme) {
-				return storedTheme
-			}
-			return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
-		}
+    <!-- Dark mode -->
+    <script>
+    const storedTheme = localStorage.getItem('theme')
 
-		const setTheme = function (theme) {
-			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				document.documentElement.setAttribute('data-bs-theme', 'dark')
-			} else {
-				document.documentElement.setAttribute('data-bs-theme', theme)
-			}
-		}
+    const getPreferredTheme = () => {
+        if (storedTheme) {
+            return storedTheme
+        }
+        return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
+    }
 
-		setTheme(getPreferredTheme())
+    const setTheme = function (theme) {
+        if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-bs-theme', 'dark')
+        } else {
+            document.documentElement.setAttribute('data-bs-theme', theme)
+        }
+    }
 
-		window.addEventListener('DOMContentLoaded', () => {
-		    var el = document.querySelector('.theme-icon-active');
-			if(el != 'undefined' && el != null) {
-				const showActiveTheme = theme => {
-				const activeThemeIcon = document.querySelector('.theme-icon-active use')
-				const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-				const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+    setTheme(getPreferredTheme())
 
-				document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-					element.classList.remove('active')
-				})
+    window.addEventListener('DOMContentLoaded', () => {
+        var el = document.querySelector('.theme-icon-active');
+        if(el != 'undefined' && el != null) {
+            const showActiveTheme = theme => {
+            const activeThemeIcon = document.querySelector('.theme-icon-active use')
+            const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+            const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
 
-				btnToActive.classList.add('active')
-				activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-			}
+            document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                element.classList.remove('active')
+            })
 
-			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-				if (storedTheme !== 'light' || storedTheme !== 'dark') {
-					setTheme(getPreferredTheme())
-				}
-			})
+            btnToActive.classList.add('active')
+            activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+        }
 
-			showActiveTheme(getPreferredTheme())
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+            if (storedTheme !== 'light' || storedTheme !== 'dark') {
+                setTheme(getPreferredTheme())
+            }
+        })
 
-			document.querySelectorAll('[data-bs-theme-value]')
-				.forEach(toggle => {
-					toggle.addEventListener('click', () => {
-						const theme = toggle.getAttribute('data-bs-theme-value')
-						localStorage.setItem('theme', theme)
-						setTheme(theme)
-						showActiveTheme(theme)
-					})
-				})
+        showActiveTheme(getPreferredTheme())
 
-			}
-		})
-		
-	</script>
+        document.querySelectorAll('[data-bs-theme-value]')
+            .forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const theme = toggle.getAttribute('data-bs-theme-value')
+                    localStorage.setItem('theme', theme)
+                    setTheme(theme)
+                    showActiveTheme(theme)
+                })
+            })
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
+        }
+    })
+    
+</script>
 
-	<!-- Google Font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com/">
-	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&amp;family=Roboto:wght@400;500;700&amp;display=swap">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-	<!-- Plugins CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/choices/css/choices.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&amp;family=Roboto:wght@400;500;700&amp;display=swap">
 
-	<!-- Theme CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/aos/aos.css">
+    <link rel="stylesheet" type="text/css"
+        href="assets/vendor/overlay-scrollbar/css/overlayscrollbars.min.css">
 
-	<!-- model bootstrap link -->
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<!-- Bootstrap CSS -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-<!-- end modal link -->
 
 </head>
 
@@ -237,38 +237,30 @@ Main Banner START -->
 							</div>
 							<div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end mt-2 mt-md-0">
 								<!-- <a href="create-post.html" class="btn btn-success mb-0">Create a post</a> -->
-								<!-- Button trigger modal -->
-							
-										<!-- Button trigger modal -->
-										<button type="button" class="btn btn-primary" data-bs-toggle="modal"
-										data-bs-target="#staticBackdrop">
-										Upload Employee Data File
-									</button>
-		
-									<!-- Modal -->
-									<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-										data-bs-keyboard="false" tabindex="-1"
-										aria-labelledby="staticBackdropLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h1 class="modal-title fs-5" id="staticBackdropLabel">Upload Excel File</h1>
-													<button type="button" class="btn-close" data-bs-dismiss="modal"
-														aria-label="Close"></button>
-												</div>
-												<div class="modal-body">
-													<h5>Please import excel file only</h5>
-													<input type="file">
-													
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-secondary"
-														data-bs-dismiss="modal">Close</button>
-													<button type="button" class="btn btn-primary">Submit</button>
-												</div>
-											</div>
-										</div>
-									</div>
+								 <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    create student
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 					</div>
 				</div>
 
@@ -570,14 +562,6 @@ Footer END -->
 <div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
 
 <!-- Bootstrap JS -->
-<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Vendors -->
-<script src="assets/vendor/choices/js/choices.min.js"></script>
-
-<!-- Template Functions -->
-<script src="assets/js/functions.js"></script>
-<!-- Bootstrap JS -->
 <script
 src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -588,6 +572,8 @@ src="assets/vendor/overlay-scrollbar/js/overlayscrollbars.min.js"></script>
 
 <!-- Template Functions -->
 <script src="assets/js/functions.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
 </body>
