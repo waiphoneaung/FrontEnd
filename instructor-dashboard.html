@@ -359,6 +359,52 @@ Page content START -->
 			</div>
 			<!-- Main content END -->
 		</div><!-- Row END -->
+		<!-- Report Table Row Starts Here-->
+		<div class="container mt-5">
+			<div class="row justify-content-between mb-5">
+				<div class="col-6">
+					<h5>Report</h5>
+				</div>
+				<div class="col-6">
+					<select class="form-control" id="reportSelect">
+						<option value="">Select Report</option>
+						<optgroup label="User Activity Report">
+							<option value="active-daily">Active Users (Daily)</option>
+							<option value="active-weekly">Active Users (Weekly)</option>
+							<option value="active-monthly">Active Users (Monthly)</option>
+						</optgroup>
+						<option value="course-performance">Course Performance Report</option>
+						<option value="enrollment-numbers">Enrollment Numbers per Course</option>
+						<option value="popular-courses">Popular Courses</option>
+						<option value="assessment-analytics">Assessment Analytics Report</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<table class="table table-striped table-bordered" id="reportTable">
+						<thead class="thead-dark">
+							<tr id="tableHeader">
+								<th>Header 1</th>
+								<th>Header 2</th>
+								<th>Header 3</th>
+							</tr>
+						</thead>
+						<tbody id="tableBody">
+							<!-- Data will be inserted here by JavaScript -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row justify-content-end">
+				<form>
+					<div class="col-4">
+						<button>Export Data.</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- Report Table Row Ends Here-->
 	</div>
 </section>
 <!-- =======================
@@ -412,6 +458,89 @@ Footer END -->
 
 <!-- Template Functions -->
 <script src="assets/js/functions.js"></script>
+<!-- Script Table starts here-->
+<script>
+	document.getElementById('reportSelect').addEventListener('change', function() {
+		const reportType = this.value;
+		const tableBody = document.getElementById('tableBody');
+		const tableHeader = document.getElementById('tableHeader');
+		
+		tableBody.innerHTML = '';  // Clear existing table data
+	
+		let headers = [];
+		let data = [];
+	
+		switch (reportType) {
+			case 'active-daily':
+				headers = ['User ID', 'Name', 'Last Active'];
+				data = [
+					['1', 'Alice', '2024-07-25'],
+					['2', 'Bob', '2024-07-25'],
+					['3', 'Charlie', '2024-07-25']
+				];
+				break;
+			case 'active-weekly':
+				headers = ['User ID', 'Name', 'Weekly Activity'];
+				data = [
+					['1', 'Alice', '5 days'],
+					['2', 'Bob', '4 days'],
+					['3', 'Charlie', '6 days']
+				];
+				break;
+			case 'active-monthly':
+				headers = ['User ID', 'Name', 'Monthly Activity'];
+				data = [
+					['1', 'Alice', '20 days'],
+					['2', 'Bob', '18 days'],
+					['3', 'Charlie', '25 days']
+				];
+				break;
+			case 'course-performance':
+				headers = ['Course ID', 'Course Name', 'Average Score'];
+				data = [
+					['101', 'Math', '85'],
+					['102', 'Science', '90'],
+					['103', 'History', '78']
+				];
+				break;
+			case 'enrollment-numbers':
+				headers = ['Course ID', 'Course Name', 'Enrollment Numbers'];
+				data = [
+					['101', 'Math', '200'],
+					['102', 'Science', '150'],
+					['103', 'History', '180']
+				];
+				break;
+			case 'popular-courses':
+				headers = ['Course ID', 'Course Name', 'Popularity Index'];
+				data = [
+					['101', 'Math', '98'],
+					['102', 'Science', '95'],
+					['103', 'History', '90']
+				];
+				break;
+			case 'assessment-analytics':
+				headers = ['Assessment ID', 'Assessment Name', 'Average Score'];
+				data = [
+					['201', 'Midterm Exam', '80'],
+					['202', 'Final Exam', '85'],
+					['203', 'Quiz 1', '78']
+				];
+				break;
+			default:
+				headers = ['Header 1', 'Header 2', 'Header 3'];
+				data = [
+					['Data 1', 'Data 2', 'Data 3'],
+					['Data 4', 'Data 5', 'Data 6'],
+					['Data 7', 'Data 8', 'Data 9']
+				];
+		}
+	
+		tableHeader.innerHTML = headers.map(header => `<th>${header}</th>`).join('');
+		tableBody.innerHTML = data.map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join('')}</tr>`).join('');
+	});
+	</script>
+	<!-- Script Table ends here-->
 
 </body>
 
